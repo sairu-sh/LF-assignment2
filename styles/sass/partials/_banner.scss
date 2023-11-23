@@ -1,0 +1,63 @@
+.banner {
+  display: flex;
+  gap: 20%;
+  padding-top: 120px;
+
+  &__left {
+    flex-basis: 50%;
+
+    &--title {
+      font-size: 56px;
+      font-family: $main-font-family;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -1.12px;
+    }
+
+    &--dscrip {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: $main-font-family;
+      color: $faded-font-color;
+    }
+
+    &--buttons {
+      display: flex;
+      gap: 32px;
+    }
+
+    &--stat {
+      display: flex;
+      gap: 52px;
+      .stat--main {
+        font-family: $main-font-family;
+        font-size: 32px;
+        font-weight: 600;
+      }
+      .stat--dscrip {
+        font-family: $main-font-family;
+        font-size: 16px;
+        font-weight: 400;
+        color: $faded-font-color;
+      }
+    }
+  }
+
+  &__right {
+    flex-basis: 50%;
+    position: relative;
+    .master {
+      //   width: 70%;
+      position: absolute;
+      top: 150px;
+      left: 190px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 28px 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
