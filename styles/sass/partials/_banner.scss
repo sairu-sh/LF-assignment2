@@ -3,6 +3,9 @@
   gap: 20%;
   padding-top: 120px;
   margin-bottom: 200px;
+  @media screen and (max-width: 1024px) {
+    gap: 75px;
+  }
 
   &__left {
     flex-basis: 50%;
@@ -12,10 +15,12 @@
 
     &--title {
       font-size: 56px;
-      font-family: $main-font-family;
       font-weight: 700;
       line-height: 1.25;
       letter-spacing: -1.12px;
+      @media screen and (max-width: 1024px) {
+        font-size: 36px;
+      }
     }
 
     &--dscrip {
@@ -23,11 +28,17 @@
       font-weight: 400;
       font-family: $main-font-family;
       color: $faded-font-color;
+      @media screen and (max-width: 1024px) {
+        font-size: 14px;
+      }
     }
 
     &--buttons {
       display: flex;
       gap: 32px;
+      btn {
+        font-size: 18px;
+      }
     }
 
     &--stat {
@@ -38,13 +49,21 @@
         .stat--main {
           font-size: 32px;
           font-weight: 600;
+          white-space: nowrap;
           margin-bottom: 0;
+          @media screen and (max-width: 1024px) {
+            font-size: 24px;
+          }
         }
         .stat--dscrip {
           font-size: 16px;
+          white-space: nowrap;
           font-weight: 400;
           color: $faded-font-color;
           margin: 6px 0 0 0;
+          @media screen and (max-width: 1024px) {
+            font-size: 10px;
+          }
         }
       }
     }
@@ -54,10 +73,10 @@
     flex-basis: 50%;
     position: relative;
     .master {
-      //   width: 70%;
+      width: 300px;
       position: absolute;
       top: 150px;
-      left: 190px;
+      right: 0;
     }
   }
 
