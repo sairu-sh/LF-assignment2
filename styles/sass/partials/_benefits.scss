@@ -12,9 +12,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 400px;
-    border-radius: 8px;
-    border: 1px solid rgba(29, 28, 49, 0.1);
-    background: #fff;
+    @include content-box;
     box-shadow: 0px 24px 64px -12px rgba(26, 24, 65, 0.06);
     &--image {
       margin-top: 32px;
