@@ -2,6 +2,7 @@
   display: flex;
   gap: 20%;
   padding-top: 120px;
+  margin-bottom: 200px;
 
   &__left {
     flex-basis: 50%;
@@ -29,16 +30,18 @@
     &--stat {
       display: flex;
       gap: 52px;
-      .stat--main {
-        font-family: $main-font-family;
-        font-size: 32px;
-        font-weight: 600;
-      }
-      .stat--dscrip {
-        font-family: $main-font-family;
-        font-size: 16px;
-        font-weight: 400;
-        color: $faded-font-color;
+      .stat__item {
+        .stat--main {
+          font-size: 32px;
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+        .stat--dscrip {
+          font-size: 16px;
+          font-weight: 400;
+          color: $faded-font-color;
+          margin: 6px 0 0 0;
+        }
       }
     }
   }
